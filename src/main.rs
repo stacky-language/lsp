@@ -324,7 +324,7 @@ fn main() -> Result<(), Box<dyn std::error::Error + Sync + Send>> {
         ..Default::default()
     };
 
-    eprintln!("Starting stacky LSP server");
+    eprintln!("Started stacky LSP server");
 
     for msg in &connection.receiver {
         match msg {
